@@ -1,0 +1,20 @@
+== 世界之樹 L1 評測 ==
+ComfyUI(卡B): {'up': True, 'vram_free_GB': 34.0} — 如 vram_free 少代表正忙，評測會撞數
+卡A Strata 125B: decode 86.3 t/s | prefill 22.1 t/s | spec_acc 175/238
+卡B llama-bench grid（要幾分鐘）...
+  fa=1 ub=512 kv=f16/f16 -> tg 31.1 | pp 752.8
+  fa=1 ub=2048 kv=f16/f16 -> tg 31.0 | pp 747.2
+  fa=1 ub=512 kv=q8_0/f16 -> tg 30.9 | pp 744.7
+  fa=1 ub=512 kv=q8_0/q8_0 -> tg 30.9 | pp 743.4
+  fa=1 ub=1024 kv=q8_0/f16 -> tg 30.9 | pp 745.3
+  fa=1 ub=1024 kv=q8_0/q8_0 -> tg 30.9 | pp 744.6
+  fa=1 ub=2048 kv=q8_0/f16 -> tg 30.9 | pp 745.2
+  fa=1 ub=512 kv=f16/q8_0 -> tg 30.8 | pp 747.6
+  fa=1 ub=1024 kv=f16/q8_0 -> tg 30.8 | pp 745.9
+  fa=1 ub=2048 kv=f16/q8_0 -> tg 30.8 | pp 746.0
+  fa=0 ub=512 kv=f16/f16 -> tg 30.7 | pp 659.7
+  fa=1 ub=2048 kv=q8_0/q8_0 -> tg 30.7 | pp 744.1
+  fa=0 ub=1024 kv=f16/f16 -> tg 30.6 | pp 723.8
+  fa=1 ub=1024 kv=f16/f16 -> tg 30.3 | pp 743.4
+報告已寫入: C:\Users\willi\Desktop\評測報告_20261121_0111.md
+歷史記錄累計於: C:\Users\willi\Tools\bench\bench_results.jsonl
